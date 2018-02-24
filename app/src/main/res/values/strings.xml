@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kotlin_Test</string>
+
+    <string name="error_code">代码异常</string>
+
+    <string name="BaseGrammarActivity">基本语法——界面</string>
+    <string name="text_base_grammar">基本语法</string>
+    <string name="text_define_fun">定义函数</string>
+    <string name="DefineFunActivity">定义函数——界面</string>
+    <string name="hint_input_frist_num">请输入第一个数字</string>
+    <string name="hint_input_second_num">请输入第二个数字</string>
+    <string name="text_get_result">获取结果</string>
+
+</resources>
