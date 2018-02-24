@@ -30,10 +30,10 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     }
 
     override fun initView() {
-        var sum = "带有两个 Int 参数、返回 Int 的函数：\nfun sum(a: Int, b: Int): Int {\n\t\treturn a + b\n}"
-        var sum2 = "将表达式作为函数体、返回值类型自动推断的函数：\nfun sum(a: Int, b: Int) = a + b"
-        var printSum = "函数返回无意义的值：\nfun printSum(a: Int, b: Int): Unit {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
-        var printSum2 = "Unit 返回类型可以省略：\nfun printSum(a: Int, b: Int) {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
+        var sum = "\n带有两个 Int 参数、返回 Int 的函数：\nfun sum(a: Int, b: Int): Int {\n\t\treturn a + b\n}"
+        var sum2 = "\n将表达式作为函数体、返回值类型自动推断的函数：\nfun sum(a: Int, b: Int) = a + b"
+        var printSum = "\n函数返回无意义的值：\nfun printSum(a: Int, b: Int): Unit {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
+        var printSum2 = "\nUnit 返回类型可以省略：\nfun printSum(a: Int, b: Int) {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
 
         addRadioButtonToGroup(sum)
         addRadioButtonToGroup(sum2)
@@ -54,21 +54,27 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         val numValueStr1 = etFristNumValue.text.trim().toString()
         val numValueStr2 = etSecondNumValue.text.trim().toString()
 
-        if(TextUtils.isEmpty(numValueStr1) || TextUtils.isEmpty(numValueStr2) ){
-            Toast.makeText(this , "请输入数值", Toast.LENGTH_SHORT).show()
+        if (TextUtils.isEmpty(numValueStr1) || TextUtils.isEmpty(numValueStr2)) {
+            Toast.makeText(this, "请输入数值", Toast.LENGTH_SHORT).show()
             return
         }
 
-        val fristNum :Int =  Integer.parseInt(etFristNumValue.text.trim().toString())
-        val secondNum = Integer.parseInt(etSecondNumValue.text.trim().toString())
-
-        when(checkedIdForRadioButton){
-            1 -> tvResult.text = sum(fristNum,secondNum).toString()
-            2 -> tvResult.text = sum2(fristNum,secondNum).toString()
-            3 -> tvResult.text = printSum(fristNum,secondNum)
-            4 -> tvResult.text = printSum2(fristNum,secondNum)
-            else -> Toast.makeText(this , getString(R.string.error_code) , Toast.LENGTH_SHORT).show()
+        try {
+            val fristNum: Int = Integer.parseInt(numValueStr1)
+            val secondNum = Integer.parseInt(numValueStr2)
+            when (checkedIdForRadioButton) {
+                1 -> tvResult.text = sum(fristNum, secondNum).toString()
+                2 -> tvResult.text = sum2(fristNum, secondNum).toString()
+                3 -> tvResult.text = printSum(fristNum, secondNum)
+                4 -> tvResult.text = printSum2(fristNum, secondNum)
+                else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: NumberFormatException) {
+            Toast.makeText(this, "数值过长，请重新输入", Toast.LENGTH_SHORT).show()
+            return
         }
+
+
     }
 
     override fun onCheckedChanged(group: RadioGroup?, checkedId: Int) {
@@ -113,7 +119,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
 //        println("sum of $a and $b is ${a + b}")
 //    }
     fun printSum(a: Int, b: Int): String {
-       return "sum of $a and $b is ${a + b}"
+        return "sum of $a and $b is ${a + b}"
     }
 
     /**
@@ -123,7 +129,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
 //    fun printSum(a: Int, b: Int) {
 //        println("sum of $a and $b is ${a + b}")
 //    }
-    fun printSum2(a: Int, b: Int): String  {
-        return  "sum of $a and $b is ${a + b}"
+    fun printSum2(a: Int, b: Int): String {
+        return "sum of $a and $b is ${a + b}"
     }
 }
