@@ -25,6 +25,7 @@ class BaseGrammarActivity : BaseActivity(), View.OnClickListener {
 
     override fun iniitListener() {
         btnDefineFun.setOnClickListener(this)
+        btnDefineVar.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -33,6 +34,8 @@ class BaseGrammarActivity : BaseActivity(), View.OnClickListener {
         when (v?.id) {
         //基本语法——界面
             btnDefineFun.id -> intent.setClass(this, DefineFunActivity::class.java)
+
+            btnDefineVar.id -> intent.setClass(this , DefineVarActivity::class.java)
 
         }
 

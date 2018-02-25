@@ -2,7 +2,9 @@ package com.su.kotlin_test.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.activity.baseGrammar.BaseGrammarActivity
 import com.su.kotlin_test.frame.BaseActivity

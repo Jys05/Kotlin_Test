@@ -9,6 +9,7 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
+import com.su.kotlin_test.utils.CreateRadioButton.Companion.createRadioButton
 import kotlinx.android.synthetic.main.activity_define_fun.*
 
 /**
@@ -35,10 +36,11 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         var printSum = "\n函数返回无意义的值：\nfun printSum(a: Int, b: Int): Unit {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
         var printSum2 = "\nUnit 返回类型可以省略：\nfun printSum(a: Int, b: Int) {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
 
-        addRadioButtonToGroup(sum)
-        addRadioButtonToGroup(sum2)
-        addRadioButtonToGroup(printSum)
-        addRadioButtonToGroup(printSum2)
+        //若不设置RadioButton的id，id会自动叠加
+        radioGroup.addView(createRadioButton(applicationContext, sum, 1))
+        radioGroup.addView(createRadioButton(applicationContext, sum2, 2))
+        radioGroup.addView(createRadioButton(applicationContext, printSum, 3))
+        radioGroup.addView(createRadioButton(applicationContext, printSum2, 4))
 
         radioGroup.check(checkedIdForRadioButton)
     }
@@ -49,13 +51,19 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         btnGetResult.setOnClickListener(this)
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        //发现不这样的话，其他界面的会受到影响（id会在这个基础上叠加）
+        radioGroup.removeAllViews()
+    }
+
 
     override fun onClick(v: View?) {
         val numValueStr1 = etFristNumValue.text.trim().toString()
         val numValueStr2 = etSecondNumValue.text.trim().toString()
 
         if (TextUtils.isEmpty(numValueStr1) || TextUtils.isEmpty(numValueStr2)) {
-            Toast.makeText(this, "请输入数值", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.please_input_num), Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -70,7 +78,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
                 else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
             }
         } catch (e: NumberFormatException) {
-            Toast.makeText(this, "数值过长，请重新输入", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.tip_for_NumberFormatException), Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -80,19 +88,6 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     override fun onCheckedChanged(group: RadioGroup?, checkedId: Int) {
         Toast.makeText(this, "radioButton的id为" + checkedId.toString(), Toast.LENGTH_SHORT).show()
         checkedIdForRadioButton = checkedId
-    }
-
-    /**
-     * 创建RadioButton到RadioGroup中
-     */
-    fun addRadioButtonToGroup(radioButtonText: String) {
-        val radioButton = RadioButton(this)
-
-        radioButton.text = radioButtonText
-        radioButton.setTextColor(resources.getColor(R.color.colorBlack))
-
-        //RadioButton的id是自动分配的依次1,2,3....
-        radioGroup.addView(radioButton)
     }
 
     /** * 知识点：函数方法   */

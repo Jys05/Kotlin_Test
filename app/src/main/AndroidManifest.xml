@@ -22,6 +22,9 @@
 
         <activity android:name=".activity.baseGrammar.DefineFunActivity"
                   android:label="@string/DefineFunActivity"/>
+
+        <activity android:name=".activity.baseGrammar.DefineVarActivity"
+                  android:label="@string/DefineVarActivity"/>
     </application>
 
 </manifest>
