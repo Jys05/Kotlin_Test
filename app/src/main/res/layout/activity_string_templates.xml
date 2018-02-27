@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            tools:context=".activity.baseSyntax.StringTemplatesActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/colorWhite"
+                  android:orientation="vertical"
+                  tools:context=".activity.baseSyntax.StringTemplatesActivity">
+
+        <TextView
+            android:id="@+id/tvKotlinWeb"
+            style="@style/style_tv.style_tv_kotlin_web"/>
+
+
+        <TextView
+            android:id="@+id/tvKotlinDetailsWeb"
+            style="@style/style_tv_kotlin_details_web"/>
+
+        <TextView
+            android:id="@+id/tvFun"
+            style="@style/style_tv"/>
+
+        <Button
+            android:id="@+id/btnRun"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_run"/>
+
+        <TextView
+            android:id="@+id/tvRunResult"
+            android:text="@string/text_run_result"
+            style="@style/style_tv"/>
+        <TextView
+            android:id="@+id/tvSumUp"
+            style="@style/style_tv"
+            android:text="@string/text_sum_up"/>
+    </LinearLayout>
+</ScrollView>

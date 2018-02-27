@@ -11,26 +11,22 @@
 
     <Button
         android:id="@+id/btnDefineFun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        style="@style/btn_lww_lhw"
         android:text="@string/text_define_fun"/>
 
     <Button
         android:id="@+id/btnDefineVar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        style="@style/btn_lww_lhw"
         android:text="@string/text_define_var"/>
 
     <Button
         android:id="@+id/btnComments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        style="@style/btn_lww_lhw"
         android:text="@string/text_comments"/>
+
+    <Button
+        android:id="@+id/btnStringTemplates"
+        style="@style/btn_lww_lhw"
+        android:text="@string/text_use_string_templates"/>
 
 </LinearLayout>

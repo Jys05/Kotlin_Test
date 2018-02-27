@@ -27,6 +27,7 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
         btnDefineFun.setOnClickListener(this)
         btnDefineVar.setOnClickListener(this)
         btnComments.setOnClickListener(this)
+        btnStringTemplates.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -39,6 +40,8 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
             btnDefineVar.id -> intent.setClass(this , DefineVarActivity::class.java)
 
             btnComments.id -> intent.setClass(this , CommentsActivity::class.java)
+
+            btnStringTemplates.id -> intent.setClass(this , StringTemplatesActivity::class.java)
 
         }
 

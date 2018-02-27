@@ -28,6 +28,9 @@
 
         <activity android:name=".activity.baseSyntax.CommentsActivity"
                   android:label="@string/CommentsActivity"/>
+
+        <activity android:name=".activity.baseSyntax.StringTemplatesActivity"
+                  android:label="@string/StringTemplatesActivity"/>
     </application>
 
 </manifest>

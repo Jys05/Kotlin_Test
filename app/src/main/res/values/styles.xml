@@ -48,14 +48,28 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="style_tv_kotlin_web" parent="style_lwm_lhw">
+    <style name="style_tv" parent="style_lwm_lhw">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="style_tv.style_tv_kotlin_web">
         <item name="android:layout_margin">8dp</item>
         <item name="android:textIsSelectable">true</item>
         <item name="android:hint">@string/show_kotlin_web</item>
         <item name="android:text">@string/kotlin_web</item>
     </style>
 
-    <style name="style_tv_kotlin_details_web" parent="style_tv_kotlin_web">
+    <style name="style_tv_kotlin_details_web" parent="style_tv.style_tv_kotlin_web">
         <item name="android:text">@string/show_kotlin_details_web</item>
+    </style>
+    
+    
+    <style name="btn_lwm_lhw" parent="style_lwm_lhw">
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="btn_lww_lhw" parent="style_lww_lhw">
+        <item name="android:layout_margin">8dp</item>
     </style>
 </resources>

@@ -35,7 +35,7 @@ class CommentsActivity :BaseActivity(){
         TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlForDetails)
 
-        tvCommentsSumUp.append(sumUp)
+        tvSumUp.append(sumUp)
     }
 
     override fun iniitListener() {
