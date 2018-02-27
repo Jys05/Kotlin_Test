@@ -29,4 +29,9 @@
         style="@style/btn_lww_lhw"
         android:text="@string/text_use_string_templates"/>
 
+    <Button
+        android:id="@+id/btnConditionalExpressions"
+        style="@style/btn_lww_lhw"
+        android:text="@string/text_use_conditional_expressions"/>
+
 </LinearLayout>

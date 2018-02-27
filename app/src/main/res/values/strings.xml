@@ -27,8 +27,14 @@
     <string name="text_sum_up">总结：</string>
     <string name="CommentsActivity">注解——界面</string>
     <string name="text_comments">注解</string>
+
+
     <string name="StringTemplatesActivity">使用字符串模板——界面</string>
     <string name="text_use_string_templates">使用字符串模板</string>
+
+
+    <string name="ConditionalExpressionsActivity">条件表达式——界面</string>
+    <string name="text_use_conditional_expressions">使用条件表达式</string>
 
 
 </resources>

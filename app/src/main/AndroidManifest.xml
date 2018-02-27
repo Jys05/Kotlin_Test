@@ -31,6 +31,9 @@
 
         <activity android:name=".activity.baseSyntax.StringTemplatesActivity"
                   android:label="@string/StringTemplatesActivity"/>
+
+        <activity android:name=".activity.baseSyntax.ConditionalExpressionsActivity"
+                  android:label="@string/ConditionalExpressionsActivity"/>
     </application>
 
 </manifest>
