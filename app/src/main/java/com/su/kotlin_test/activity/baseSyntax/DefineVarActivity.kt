@@ -23,6 +23,7 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
 
     val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义变量"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/properties.html"
+    val urlFlagForDetails = "属性和字段"
     var urlForBlog = "http://blog.danlew.net/2017/05/30/mutable-vals-in-kotlin/#"
     var urlFlag = "介绍var与val的博客"
 
@@ -54,7 +55,7 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     override fun initView() {
         //设置官网链接
         setTvSpan(tvKotlinWeb, url, url)
-        setTvSpan(tvKotlinDetailsWeb , urlForDetails ,urlForDetails)
+        setTvSpan(tvKotlinDetailsWeb , urlForDetails ,urlFlagForDetails)
 
         //设置总结
         tvSumUp.text = "1、val：不可变变量，类似java中的加了final \n" +

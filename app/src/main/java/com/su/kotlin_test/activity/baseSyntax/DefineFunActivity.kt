@@ -20,6 +20,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     var checkedIdForRadioButton = 1
     val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义函数"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/functions.html"
+    val urlFlagForDetails = "函数"
 
     override fun setLayoutResId(): Int = R.layout.activity_define_fun
 
@@ -33,7 +34,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
 
     override fun initView() {
         setTvSpan(tvKotlinWeb , url ,url)
-        setTvSpan(tvKotlinDetailsWeb , urlForDetails ,urlForDetails)
+        setTvSpan(tvKotlinDetailsWeb , urlForDetails ,urlFlagForDetails)
 
         var sum = "\n带有两个 Int 参数、返回 Int 的函数：\nfun sum(a: Int, b: Int): Int {\n\t\treturn a + b\n}"
         var sum2 = "\n将表达式作为函数体、返回值类型自动推断的函数：\nfun sum(a: Int, b: Int) = a + b"

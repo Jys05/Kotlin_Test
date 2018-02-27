@@ -15,6 +15,7 @@ class ConditionalExpressionsActivity : BaseActivity() {
 
     val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用条件表达式"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/control-flow.html#if-表达式"
+    val urlFlagForDetails = "if 表达式"
 
     override fun setLayoutResId(): Int = R.layout.activity_conditional_expressions
 
@@ -27,7 +28,7 @@ class ConditionalExpressionsActivity : BaseActivity() {
     override fun initView() {
         //设置官网链接
         TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
-        TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlForDetails)
+        TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         tvFun.text = "fun maxOf(a: Int, b: Int): Int {\n" +
                 "    if (a > b) {\n" +
