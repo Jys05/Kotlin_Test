@@ -20,6 +20,10 @@
             android:id="@+id/tvKotlinWeb"
             style="@style/style_tv_kotlin_web"/>
 
+        <TextView
+            android:id="@+id/tvKotlinDetailsWeb"
+            style="@style/style_tv_kotlin_details_web"/>
+
         <EditText
             android:id="@+id/etFristNumValue"
             android:layout_width="match_parent"

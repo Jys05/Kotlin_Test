@@ -12,6 +12,11 @@
         android:id="@+id/tvKotlinWeb"
         style="@style/style_tv_kotlin_web"/>
 
+
+    <TextView
+        android:id="@+id/tvKotlinDetailsWeb"
+        style="@style/style_tv_kotlin_details_web"/>
+
     <TextView
         android:id="@+id/tvCommentsSumUp"
         android:layout_height="wrap_content"

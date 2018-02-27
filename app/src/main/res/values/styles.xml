@@ -49,10 +49,13 @@
     </style>
 
     <style name="style_tv_kotlin_web" parent="style_lwm_lhw">
-        <item name="android:id">@+id/tvKotlinWeb</item>
         <item name="android:layout_margin">8dp</item>
         <item name="android:textIsSelectable">true</item>
         <item name="android:hint">@string/show_kotlin_web</item>
         <item name="android:text">@string/kotlin_web</item>
+    </style>
+
+    <style name="style_tv_kotlin_details_web" parent="style_tv_kotlin_web">
+        <item name="android:text">@string/show_kotlin_details_web</item>
     </style>
 </resources>

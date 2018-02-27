@@ -3,6 +3,7 @@
 
     <string name="show_kotlin_web">显示官方的链接</string>
     <string name="kotlin_web">Kotlin官网链接：</string>
+    <string name="show_kotlin_details_web">详细阅读：</string>
     <string name="kotlin_web_url">&lt;a href=\'%1$s\'&gt;%2$s&lt;/a&gt;</string>
     <string name="error_code">代码异常</string>
 
