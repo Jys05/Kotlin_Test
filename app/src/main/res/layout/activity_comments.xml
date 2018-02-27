@@ -6,7 +6,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:background="@color/colorWhite"
-              tools:context=".activity.baseGrammar.CommentsActivity">
+              tools:context=".activity.baseSyntax.CommentsActivity">
 
     <TextView
         android:id="@+id/tvKotlinWeb"

@@ -1,13 +1,10 @@
-package com.su.kotlin_test.activity.baseGrammar
+package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
-import android.text.Html
-import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.RadioGroup
 import android.widget.Toast
 import com.su.kotlin_test.R
-import com.su.kotlin_test.R.id.tvKotlinWeb
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton.Companion.createRadioButton
 import com.su.kotlin_test.utils.TvSpanUtil.Companion.setTvSpan

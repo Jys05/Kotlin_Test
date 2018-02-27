@@ -1,10 +1,8 @@
-package com.su.kotlin_test.activity.baseGrammar
+package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
-import android.support.annotation.IntegerRes
 import android.text.TextUtils
 import android.view.View
-import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import com.su.kotlin_test.R

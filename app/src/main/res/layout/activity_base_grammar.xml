@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="com.su.kotlin_test.activity.baseGrammar.BaseSyntaxActivity">
+    tools:context="com.su.kotlin_test.activity.baseSyntax.BaseSyntaxActivity">
 
     <Button
         android:id="@+id/btnDefineFun"

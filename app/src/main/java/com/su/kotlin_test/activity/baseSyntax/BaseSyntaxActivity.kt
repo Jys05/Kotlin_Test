@@ -1,4 +1,4 @@
-package com.su.kotlin_test.activity.baseGrammar
+package com.su.kotlin_test.activity.baseSyntax
 
 import android.content.Intent
 import android.os.Bundle
