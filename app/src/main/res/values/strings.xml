@@ -37,4 +37,10 @@
     <string name="text_use_conditional_expressions">使用条件表达式</string>
 
 
+    <string name="NullableValueActivity">使用可空值及 null 检测——界面</string>
+    <string name="TypeChecksActivity">使用类型检测及自动类型转换——界面</string>
+    <string name="text_type_checks">使用类型检测及自动类型转换</string>
+    <string name="text_nullable_value">关于?符号,使用可空值</string>
+
+
 </resources>

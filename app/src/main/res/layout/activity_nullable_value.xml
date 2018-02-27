@@ -8,16 +8,13 @@
             android:background="@color/colorWhite"
             android:fillViewport="true"
             android:fitsSystemWindows="true"
-            tools:context=".activity.baseSyntax.StringTemplatesActivity">
+            tools:context=".activity.baseSyntax.NullableValueActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:app="http://schemas.android.com/apk/res-auto"
-                  xmlns:tools="http://schemas.android.com/tools"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@color/colorWhite"
-                  android:orientation="vertical"
-                  tools:context=".activity.baseSyntax.StringTemplatesActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tvKotlinWeb"
@@ -27,6 +24,13 @@
         <TextView
             android:id="@+id/tvKotlinDetailsWeb"
             style="@style/style_tv_kotlin_details_web"/>
+
+        <EditText
+            android:id="@+id/etValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入文本或者数字"
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/tvFun"

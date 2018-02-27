@@ -34,6 +34,12 @@
 
         <activity android:name=".activity.baseSyntax.ConditionalExpressionsActivity"
                   android:label="@string/ConditionalExpressionsActivity"/>
+
+        <activity android:name=".activity.baseSyntax.NullableValueActivity"
+                  android:label="@string/NullableValueActivity"/>
+
+        <activity android:name=".activity.baseSyntax.TypeChecksActivity"
+                  android:label="@string/TypeChecksActivity"/>
     </application>
 
 </manifest>

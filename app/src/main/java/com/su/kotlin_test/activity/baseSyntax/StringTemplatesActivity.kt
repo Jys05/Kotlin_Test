@@ -48,17 +48,17 @@ class StringTemplatesActivity : BaseActivity() {
 
         val sumUpStr = "\n字符串模板格式：\n" +
                 "1、美元符号($)+变量\n" +
-                "2、美元符号($)+用花括号括起来的任意表达式\n"+
-                "注意：\n"+
-                "1、将代码写成一个函数方法，也可用\n"+
+                "2、美元符号($)+用花括号括起来的任意表达式\n" +
+                "注意：\n" +
+                "1、将代码写成一个函数方法，也可用\n" +
                 "2、自定义函数方法若没有返回值，会显示“kotlin.Unit”\n"
         tvSumUp.append(sumUpStr)
 
-        scrollView.smoothScrollTo(0,0)
+        scrollView.smoothScrollTo(0, 0)
     }
 
     override fun iniitListener() {
-        btnRun.setOnClickListener { v: View? -> tvRunResult.append(useStringTemplates()) }
+        btnRun.setOnClickListener { v: View? -> tvRunResult.text = useStringTemplates() }
     }
 
     fun useStringTemplates(): String {

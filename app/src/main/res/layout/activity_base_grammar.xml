@@ -34,4 +34,14 @@
         style="@style/btn_lww_lhw"
         android:text="@string/text_use_conditional_expressions"/>
 
+    <Button
+        android:id="@+id/btnNullableValue"
+        style="@style/btn_lww_lhw"
+        android:text="@string/text_nullable_value"/>
+
+    <Button
+        android:id="@+id/btnTypeChecks"
+        style="@style/btn_lww_lhw"
+        android:text="@string/text_type_checks"/>
+
 </LinearLayout>

@@ -33,8 +33,8 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     }
 
     override fun initView() {
-        setTvSpan(tvKotlinWeb , url ,url)
-        setTvSpan(tvKotlinDetailsWeb , urlForDetails ,urlFlagForDetails)
+        setTvSpan(tvKotlinWeb, url, url)
+        setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         var sum = "\n带有两个 Int 参数、返回 Int 的函数：\nfun sum(a: Int, b: Int): Int {\n\t\treturn a + b\n}"
         var sum2 = "\n将表达式作为函数体、返回值类型自动推断的函数：\nfun sum(a: Int, b: Int) = a + b"
@@ -48,6 +48,8 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         radioGroup.addView(createRadioButton(applicationContext, printSum2, 4))
 
         radioGroup.check(checkedIdForRadioButton)
+
+        scrollView.smoothScrollTo(0, 0)
 
     }
 

@@ -29,6 +29,8 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
         btnComments.setOnClickListener(this)
         btnStringTemplates.setOnClickListener(this)
         btnConditionalExpressions.setOnClickListener(this)
+        btnNullableValue.setOnClickListener(this)
+        btnTypeChecks.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -45,6 +47,10 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
             btnStringTemplates.id -> intent.setClass(this , StringTemplatesActivity::class.java)
 
             btnConditionalExpressions.id -> intent.setClass(this , ConditionalExpressionsActivity::class.java)
+
+            btnNullableValue.id -> intent.setClass(this , NullableValueActivity::class.java)
+
+            btnTypeChecks.id -> intent.setClass(this , TypeChecksActivity::class.java)
 
         }
 

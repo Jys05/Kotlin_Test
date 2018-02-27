@@ -38,6 +38,11 @@
             android:text="@string/text_run"/>
 
         <TextView
+            android:id="@+id/tv1"
+            android:text="@string/text_run_result"
+            style="@style/style_tv"/>
+
+        <TextView
             android:id="@+id/tvRunResult"
             android:text="@string/text_run_result"
             style="@style/style_tv"/>

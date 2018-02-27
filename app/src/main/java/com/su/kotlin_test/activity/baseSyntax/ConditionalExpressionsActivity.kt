@@ -40,13 +40,13 @@ class ConditionalExpressionsActivity : BaseActivity() {
                 "\n\n或者\n" +
                 "fun maxOf(a: Int, b: Int) = if (a > b) a else b"
 
-        val sumUpStr = "\n1、在Kotlin中，没有Java的“三元运算符（条件 ? 然后 : 否则”\n"+
-                "2、if的分支可以是代码块，最后的表达式作为该块的值\n"+
-                "3、如果你使用 if 作为表达式而不是语句（例如：返回它的值或者把它赋给变量），该表达式需要有 else 分支\n\n"+
-                "测试过，如果写成：\n"+
+        val sumUpStr = "\n1、在Kotlin中，没有Java的“三元运算符（条件 ? 然后 : 否则”\n" +
+                "2、if的分支可以是代码块，最后的表达式作为该块的值\n" +
+                "3、如果你使用 if 作为表达式而不是语句（例如：返回它的值或者把它赋给变量），该表达式需要有 else 分支\n\n" +
+                "测试过，如果写成：\n" +
                 "        val a = 231\n" +
                 "        val b = 123\n" +
-                "        val test = if (a > b) { a } \n"+
+                "        val test = if (a > b) { a } \n" +
                 "会报错，所以验证了第三点，若作为表达式，需要有 else 分支"
 
 
@@ -56,7 +56,7 @@ class ConditionalExpressionsActivity : BaseActivity() {
     }
 
     override fun iniitListener() {
-        btnRun.setOnClickListener { v: View? -> tvRunResult.append(maxOf(0, 42).toString()) }
+        btnRun.setOnClickListener { v: View? -> tvRunResult.text = maxOf(0, 42).toString() }
     }
 
     fun maxOf(a: Int, b: Int): Int {
