@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_base_grammar.*
 /**
  * Created by Sujiayong on 2018/2/24.
  */
-class BaseGrammarActivity : BaseActivity(), View.OnClickListener {
+class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
 
     override fun setLayoutResId(): Int = R.layout.activity_base_grammar
 
@@ -26,6 +26,7 @@ class BaseGrammarActivity : BaseActivity(), View.OnClickListener {
     override fun iniitListener() {
         btnDefineFun.setOnClickListener(this)
         btnDefineVar.setOnClickListener(this)
+        btnComments.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -36,6 +37,8 @@ class BaseGrammarActivity : BaseActivity(), View.OnClickListener {
             btnDefineFun.id -> intent.setClass(this, DefineFunActivity::class.java)
 
             btnDefineVar.id -> intent.setClass(this , DefineVarActivity::class.java)
+
+            btnComments.id -> intent.setClass(this , CommentsActivity::class.java)
 
         }
 

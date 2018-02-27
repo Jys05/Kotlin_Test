@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">Kotlin_Test</string>
 
+    <string name="show_kotlin_web">显示官方的链接</string>
+    <string name="kotlin_web">Kotlin官网链接：</string>
+    <string name="kotlin_web_url">&lt;a href=\'%1$s\'&gt;%2$s&lt;/a&gt;</string>
     <string name="error_code">代码异常</string>
 
-    <string name="BaseGrammarActivity">基本语法——界面</string>
-    <string name="text_base_grammar">基本语法</string>
+    <string name="BaseSyntaxActivity">基本语法——界面</string>
+    <string name="text_base_syntax">基本语法</string>
     <string name="text_define_fun">定义函数</string>
 
 
@@ -13,14 +16,16 @@
     <string name="hint_input_second_num">请输入第二个数字</string>
     <string name="text_get_result">获取结果</string>
     <string name="text_define_var">定义变量</string>
-    <string name="tip_for_NumberFormatException">数值</string>
-    <string name="please_input_num">请输入数值过长，请重新输入</string>
+    <string name="tip_for_NumberFormatException">数值过长，请重新输入</string>
+    <string name="please_input_num">请输入数值</string>
 
 
     <string name="DefineVarActivity">定义变量——界面</string>
     <string name="text_run">运行</string>
     <string name="text_run_result">运行结果：</string>
     <string name="text_sum_up">总结：</string>
+    <string name="CommentsActivity">注解——界面</string>
+    <string name="text_comments">注解</string>
 
 
 </resources>

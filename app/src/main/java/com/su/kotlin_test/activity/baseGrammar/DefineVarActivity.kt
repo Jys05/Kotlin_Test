@@ -1,12 +1,16 @@
 package com.su.kotlin_test.activity.baseGrammar
 
 import android.os.Bundle
+import android.text.Html
+import android.text.method.LinkMovementMethod
 import android.view.View
 import android.widget.RadioGroup
 import android.widget.Toast
 import com.su.kotlin_test.R
+import com.su.kotlin_test.R.id.tvKotlinWeb
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton.Companion.createRadioButton
+import com.su.kotlin_test.utils.TvSpanUtil.Companion.setTvSpan
 import kotlinx.android.synthetic.main.activity_define_var.*
 
 /**
@@ -19,6 +23,10 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     var valFunText: String = ""
     var varFunText: String = ""
     var globalVarFunText: String = ""
+
+    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义变量"
+    var urlForBlog = "http://blog.danlew.net/2017/05/30/mutable-vals-in-kotlin/#"
+    var urlFlag = "介绍var与val的博客"
 
     override fun setLayoutResId(): Int = R.layout.activity_define_var
 
@@ -46,9 +54,14 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     }
 
     override fun initView() {
-        tvSumUp.text = "val：不可变变量，类似java中的加了final \n" +
+        //设置官网链接
+        setTvSpan(tvKotlinWeb, url, url)
+
+        //设置总结
+        tvSumUp.text = "1、val：不可变变量，类似java中的加了final \n" +
                 "var:可变变量 \n" +
-                "在Kotlin中，会自动推断出类型"
+                "2、在Kotlin中，会自动推断出类型\n"
+        setTvSpan(tvSumUp, urlForBlog, urlFlag)
 
         //若不设置RadioButton的id，id会自动叠加
         radioGroup.addView(createRadioButton(applicationContext, valFunText, 1))
@@ -56,6 +69,8 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         radioGroup.addView(createRadioButton(applicationContext, globalVarFunText, 3))
 
         radioGroup.check(checkedIdForRadioButton)
+
+        scrollView.smoothScrollTo(0, 0)
     }
 
     override fun iniitListener() {
@@ -74,7 +89,7 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         when (checkedIdForRadioButton) {
             1 -> tvResult.text = funForVal()
             2 -> tvResult.text = funForVar()
-            3 -> tvResult.text = funForGlobalVar()
+            3 -> tvResult.text = funForTopLevelVar()
             else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
         }
     }
@@ -108,7 +123,7 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     /**
      * 顶层变量：
      */
-    fun funForGlobalVar(): String {
+    fun funForTopLevelVar(): String {
         var result = "x = $x; PI = $PI(before)"
 
         incrementX()

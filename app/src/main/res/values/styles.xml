@@ -6,6 +6,53 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlack</item>
     </style>
 
+    <style name="style_lww_lhw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_lwm_lhm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="style_lww_lhm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="style_lwm_lhw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_lw0_lhw">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_lww_lh0">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="style_lw0_lh0">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="style_tv_12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="style_tv_kotlin_web" parent="style_lwm_lhw">
+        <item name="android:id">@+id/tvKotlinWeb</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:hint">@string/show_kotlin_web</item>
+        <item name="android:text">@string/kotlin_web</item>
+    </style>
 </resources>

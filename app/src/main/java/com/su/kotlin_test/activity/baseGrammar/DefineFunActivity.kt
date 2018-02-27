@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton.Companion.createRadioButton
+import com.su.kotlin_test.utils.TvSpanUtil.Companion.setTvSpan
 import kotlinx.android.synthetic.main.activity_define_fun.*
 
 /**
@@ -19,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_define_fun.*
 class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnCheckedChangeListener {
 
     var checkedIdForRadioButton = 1
+    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义函数"
 
     override fun setLayoutResId(): Int = R.layout.activity_define_fun
 
@@ -31,6 +33,8 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     }
 
     override fun initView() {
+        setTvSpan(tvKotlinWeb , url ,url)
+
         var sum = "\n带有两个 Int 参数、返回 Int 的函数：\nfun sum(a: Int, b: Int): Int {\n\t\treturn a + b\n}"
         var sum2 = "\n将表达式作为函数体、返回值类型自动推断的函数：\nfun sum(a: Int, b: Int) = a + b"
         var printSum = "\n函数返回无意义的值：\nfun printSum(a: Int, b: Int): Unit {\n\t\tprintln(\"sum of \$a and \$b is \${a + b}\")\n}"
@@ -43,6 +47,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
         radioGroup.addView(createRadioButton(applicationContext, printSum2, 4))
 
         radioGroup.check(checkedIdForRadioButton)
+
     }
 
     override fun iniitListener() {

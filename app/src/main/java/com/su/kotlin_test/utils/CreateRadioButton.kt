@@ -35,7 +35,8 @@ class CreateRadioButton {
             var radioButton = RadioButton(context)
 
             radioButton.text = text
-            radioButton.setTextColor(context!!.resources.getColor(R.color.colorBlack))
+            //TODO : 2018/2/27 由于在styles.xml中设置了全局文本为黑色，所以引掉此语句
+//            radioButton.setTextColor(context!!.resources.getColor(R.color.colorBlack))
             radioButton.id = id   //若不设置RadioButton的id，id会自动叠加
 
             return radioButton

@@ -2,11 +2,9 @@ package com.su.kotlin_test.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.Toast
 import com.su.kotlin_test.R
-import com.su.kotlin_test.activity.baseGrammar.BaseGrammarActivity
+import com.su.kotlin_test.activity.baseGrammar.BaseSyntaxActivity
 import com.su.kotlin_test.frame.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -43,7 +41,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
         when (v?.id) {
         //基本语法——界面
-            btnBaseGrammar.id -> intent.setClass(this, BaseGrammarActivity::class.java)
+            btnBaseGrammar.id -> intent.setClass(this, BaseSyntaxActivity::class.java)
 
         }
 

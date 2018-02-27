@@ -17,14 +17,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.baseGrammar.BaseGrammarActivity"
-                  android:label="@string/BaseGrammarActivity"/>
+        <activity android:name=".activity.baseGrammar.BaseSyntaxActivity"
+                  android:label="@string/BaseSyntaxActivity"/>
 
         <activity android:name=".activity.baseGrammar.DefineFunActivity"
                   android:label="@string/DefineFunActivity"/>
 
         <activity android:name=".activity.baseGrammar.DefineVarActivity"
                   android:label="@string/DefineVarActivity"/>
+
+        <activity android:name=".activity.baseGrammar.CommentsActivity"
+                  android:label="@string/CommentsActivity"/>
     </application>
 
 </manifest>
