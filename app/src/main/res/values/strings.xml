@@ -7,16 +7,25 @@
     <string name="kotlin_web_url">&lt;a href=\'%1$s\'&gt;%2$s&lt;/a&gt;</string>
     <string name="error_code">代码异常</string>
 
+
     <string name="BaseSyntaxActivity">基本语法——界面</string>
     <string name="text_base_syntax">基本语法</string>
     <string name="text_define_fun">定义函数</string>
+    <string name="text_define_var">定义变量</string>
+    <string name="text_comments">注解</string>
+    <string name="text_use_conditional_expressions">使用条件表达式</string>
+    <string name="text_use_string_templates">使用字符串模板</string>
+    <string name="text_type_checks">使用类型检测及自动类型转换</string>
+    <string name="text_nullable_value">关于?符号,使用可空值</string>
+    <string name="text_for_while_loop">for 和 while 循环</string>
+    <string name="text_when_expression">when 表达式</string>
+    <string name="text_use_range">使用区间（range）</string>
 
 
     <string name="DefineFunActivity">定义函数——界面</string>
     <string name="hint_input_frist_num">请输入第一个数字</string>
     <string name="hint_input_second_num">请输入第二个数字</string>
     <string name="text_get_result">获取结果</string>
-    <string name="text_define_var">定义变量</string>
     <string name="tip_for_NumberFormatException">数值过长，请重新输入</string>
     <string name="please_input_num">请输入数值</string>
 
@@ -25,22 +34,24 @@
     <string name="text_run">运行</string>
     <string name="text_run_result">运行结果：</string>
     <string name="text_sum_up">总结：</string>
+
+
     <string name="CommentsActivity">注解——界面</string>
-    <string name="text_comments">注解</string>
 
 
     <string name="StringTemplatesActivity">使用字符串模板——界面</string>
-    <string name="text_use_string_templates">使用字符串模板</string>
 
 
     <string name="ConditionalExpressionsActivity">条件表达式——界面</string>
-    <string name="text_use_conditional_expressions">使用条件表达式</string>
 
 
     <string name="NullableValueActivity">使用可空值及 null 检测——界面</string>
+
+
     <string name="TypeChecksActivity">使用类型检测及自动类型转换——界面</string>
-    <string name="text_type_checks">使用类型检测及自动类型转换</string>
-    <string name="text_nullable_value">关于?符号,使用可空值</string>
+
+
+    <string name="ForAndWhileLoopActivity">关于for 和 while 循环——界面</string>
 
 
 </resources>

@@ -40,6 +40,9 @@
 
         <activity android:name=".activity.baseSyntax.TypeChecksActivity"
                   android:label="@string/TypeChecksActivity"/>
+
+        <activity android:name=".activity.baseSyntax.ForAndWhileLoopActivity"
+                  android:label="@string/ForAndWhileLoopActivity"/>
     </application>
 
 </manifest>

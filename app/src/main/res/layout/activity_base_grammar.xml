@@ -1,47 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    android:orientation="vertical"
     tools:context="com.su.kotlin_test.activity.baseSyntax.BaseSyntaxActivity">
 
-    <Button
-        android:id="@+id/btnDefineFun"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_define_fun"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnDefineVar"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_define_var"/>
+        <Button
+            android:id="@+id/btnDefineFun"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_define_fun"/>
 
-    <Button
-        android:id="@+id/btnComments"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_comments"/>
+        <Button
+            android:id="@+id/btnDefineVar"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_define_var"/>
 
-    <Button
-        android:id="@+id/btnStringTemplates"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_use_string_templates"/>
+        <Button
+            android:id="@+id/btnComments"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_comments"/>
 
-    <Button
-        android:id="@+id/btnConditionalExpressions"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_use_conditional_expressions"/>
+        <Button
+            android:id="@+id/btnStringTemplates"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_use_string_templates"/>
 
-    <Button
-        android:id="@+id/btnNullableValue"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_nullable_value"/>
+        <Button
+            android:id="@+id/btnConditionalExpressions"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_use_conditional_expressions"/>
 
-    <Button
-        android:id="@+id/btnTypeChecks"
-        style="@style/btn_lww_lhw"
-        android:text="@string/text_type_checks"/>
+        <Button
+            android:id="@+id/btnNullableValue"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_nullable_value"/>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnTypeChecks"
+            style="@style/btn_lwm_lhw"
+            android:text="@string/text_type_checks"/>
+
+        <Button
+            android:id="@+id/btnForAndWhileLoop"
+            style="@style/btn_lwm_lhw"
+            android:textAllCaps="false"
+            android:text="@string/text_for_while_loop"/>
+
+        <Button
+            android:id="@+id/btnWhenExpression"
+            style="@style/btn_lwm_lhw"
+            android:textAllCaps="false"
+            android:text="@string/text_when_expression"/>
+
+
+        <Button
+            android:id="@+id/btnUseRanges"
+            style="@style/btn_lwm_lhw"
+            android:textAllCaps="false"
+            android:text="@string/text_use_range"/>
+
+    </LinearLayout>
+</ScrollView>

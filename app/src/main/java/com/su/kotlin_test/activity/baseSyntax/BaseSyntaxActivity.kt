@@ -31,6 +31,7 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
         btnConditionalExpressions.setOnClickListener(this)
         btnNullableValue.setOnClickListener(this)
         btnTypeChecks.setOnClickListener(this)
+        btnForAndWhileLoop.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -51,6 +52,8 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
             btnNullableValue.id -> intent.setClass(this , NullableValueActivity::class.java)
 
             btnTypeChecks.id -> intent.setClass(this , TypeChecksActivity::class.java)
+
+            btnForAndWhileLoop.id -> intent.setClass(this , ForAndWhileLoopActivity::class.java)
 
         }
 
