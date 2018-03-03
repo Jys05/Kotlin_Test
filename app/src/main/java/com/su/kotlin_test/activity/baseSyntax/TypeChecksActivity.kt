@@ -36,7 +36,7 @@ class TypeChecksActivity : BaseActivity() {
         TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
 
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
-        tvKotlinDetailsWeb.append("和")
+        tvKotlinDetailsWeb.append(" 和 ")
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails2, urlFlagForDetails2)
 
         var getStringLength1 = "\n    fun getStringLength1(obj: Any): Int? {\n" +
