@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/btnBaseGrammar"
-        style="@style/btn_lww_lhw"
+        style="@style/btn_lwm_lhw"
         android:text="@string/text_base_syntax"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
