@@ -33,6 +33,7 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
         btnTypeChecks.setOnClickListener(this)
         btnForAndWhileLoop.setOnClickListener(this)
         btnWhenExpression.setOnClickListener(this)
+        btnUseRanges.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -57,6 +58,8 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
             btnForAndWhileLoop.id -> intent.setClass(this , ForAndWhileLoopActivity::class.java)
 
             btnWhenExpression.id -> intent.setClass(this , WhenExpressionActivity::class.java)
+
+            btnUseRanges.id -> intent.setClass(this , UseRangesActivity::class.java)
 
         }
 

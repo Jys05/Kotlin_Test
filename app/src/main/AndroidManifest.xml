@@ -46,6 +46,9 @@
 
         <activity android:name=".activity.baseSyntax.WhenExpressionActivity"
                   android:label="@string/WhenExpressionActivity"/>
+
+        <activity android:name=".activity.baseSyntax.UseRangesActivity"
+                  android:label="@string/UseRangesActivity"/>
     </application>
 
 </manifest>
