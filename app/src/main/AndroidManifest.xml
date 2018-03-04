@@ -49,6 +49,9 @@
 
         <activity android:name=".activity.baseSyntax.UseRangesActivity"
                   android:label="@string/UseRangesActivity"/>
+
+        <activity android:name=".activity.baseSyntax.CollectionsActivity"
+                  android:label="@string/CollectionsActivity"/>
     </application>
 
 </manifest>

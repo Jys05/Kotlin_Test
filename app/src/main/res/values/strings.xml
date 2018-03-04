@@ -56,6 +56,8 @@
 
     <string name="WhenExpressionActivity">使用 when 表达式——界面</string>
     <string name="UseRangesActivity">使用区间（range）——界面</string>
+    <string name="CollectionsActivity">使用集合——界面</string>
+    <string name="text_collections">使用集合</string>
 
 
 </resources>

@@ -67,5 +67,12 @@
             android:textAllCaps="false"
             android:text="@string/text_use_range"/>
 
+
+        <Button
+            android:id="@+id/btnCollections"
+            style="@style/btn_lwm_lhw"
+            android:textAllCaps="false"
+            android:text="@string/text_collections"/>
+
     </LinearLayout>
 </ScrollView>
