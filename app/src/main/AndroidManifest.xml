@@ -43,6 +43,9 @@
 
         <activity android:name=".activity.baseSyntax.ForAndWhileLoopActivity"
                   android:label="@string/ForAndWhileLoopActivity"/>
+
+        <activity android:name=".activity.baseSyntax.WhenExpressionActivity"
+                  android:label="@string/WhenExpressionActivity"/>
     </application>
 
 </manifest>

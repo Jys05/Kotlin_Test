@@ -1,6 +1,8 @@
 package com.su.kotlin_test.activity.baseSyntax;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 import com.su.kotlin_test.frame.BaseActivity;
 
@@ -15,16 +17,19 @@ import java.util.List;
 
 public class Java2KotlinTest {
 
-    private void test() {
-        String[] ha = new String[]{"as", "sad"};
+    private void test2() {
 
+    }
 
-        String[] ha2 = new String[]{};
+    private void test(int jh) {
 
-        int i = 0;
-        while (i < ha.length) {
-
-            i++;
+        switch (jh) {
+            case 1:
+            case 12:
+            case 8:
+                String v = "sdas";
+                v =  v + "sadas";
+                break;
         }
     }
 }

@@ -54,4 +54,7 @@
     <string name="ForAndWhileLoopActivity">关于for 和 while 循环——界面</string>
 
 
+    <string name="WhenExpressionActivity">使用 when 表达式——界面</string>
+
+
 </resources>
