@@ -52,6 +52,9 @@
 
         <activity android:name=".activity.baseSyntax.CollectionsActivity"
                   android:label="@string/CollectionsActivity"/>
+
+        <activity android:name=".activity.baseSyntax.CreatingInstancesActivity"
+                  android:label="@string/CreatingInstancesActivity"/>
     </application>
 
 </manifest>

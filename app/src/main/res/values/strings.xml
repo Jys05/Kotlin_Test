@@ -20,6 +20,8 @@
     <string name="text_for_while_loop">for 和 while 循环</string>
     <string name="text_when_expression">when 表达式</string>
     <string name="text_use_range">使用区间（range）</string>
+    <string name="text_collections">使用集合</string>
+    <string name="text_creating_instances">创建基本类及其实例</string>
 
 
     <string name="DefineFunActivity">定义函数——界面</string>
@@ -55,9 +57,11 @@
 
 
     <string name="WhenExpressionActivity">使用 when 表达式——界面</string>
+
     <string name="UseRangesActivity">使用区间（range）——界面</string>
+
     <string name="CollectionsActivity">使用集合——界面</string>
-    <string name="text_collections">使用集合</string>
+    <string name="CreatingInstancesActivity">创建基本类及其实例——界面</string>
 
 
 </resources>

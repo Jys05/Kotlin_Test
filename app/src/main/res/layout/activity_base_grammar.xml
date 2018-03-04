@@ -74,5 +74,12 @@
             android:textAllCaps="false"
             android:text="@string/text_collections"/>
 
+
+        <Button
+            android:id="@+id/btnCreatingInstances"
+            style="@style/btn_lwm_lhw"
+            android:textAllCaps="false"
+            android:text="@string/text_creating_instances"/>
+
     </LinearLayout>
 </ScrollView>

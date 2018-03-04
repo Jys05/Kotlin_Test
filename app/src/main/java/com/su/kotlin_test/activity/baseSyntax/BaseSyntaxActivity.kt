@@ -35,6 +35,7 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
         btnWhenExpression.setOnClickListener(this)
         btnUseRanges.setOnClickListener(this)
         btnCollections.setOnClickListener(this)
+        btnCreatingInstances.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -63,6 +64,8 @@ class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
             btnUseRanges.id -> intent.setClass(this , UseRangesActivity::class.java)
 
             btnCollections.id -> intent.setClass(this , CollectionsActivity::class.java)
+
+            btnCreatingInstances.id -> intent.setClass(this , CreatingInstancesActivity::class.java)
 
         }
 
