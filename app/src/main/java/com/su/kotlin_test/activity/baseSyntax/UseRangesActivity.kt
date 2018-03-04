@@ -76,7 +76,10 @@ class UseRangesActivity : BaseActivity() {
 
         val sumUpStr = "\n1、“..”符号：是“[,]”区间，如“0..10” 等于 [0,10]\n" +
                 "2、“until”：是“[,)”区间，如“0 until 10” 等于 [0,10)\n" +
-                "3、“downTo”：是倒序,当如0 downTo 10，得到的结果是“0 downTo 10 step 1”"
+                "3、“downTo”：是倒序,当如0 downTo 10，得到的结果是“0 downTo 10 step 1”\n" +
+                "4、“step”：是获取第0位、第x位以及第x的倍数位的数字，\n" +
+                "    如x in 0..10 step 3，得到的是0、3、6、9\n" +
+                "    又如x in 10..14 step 3，得到的是10、13"
         tvSumUp.append(sumUpStr)
     }
 
@@ -133,7 +136,7 @@ class UseRangesActivity : BaseActivity() {
         }
 
         for (x in 0..10 step 3) {
-            print(x)
+            resultForLoop3 += x
         }
 
         return resultForLoop1 +
