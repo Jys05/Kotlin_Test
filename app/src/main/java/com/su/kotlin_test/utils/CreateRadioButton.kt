@@ -1,10 +1,7 @@
 package com.su.kotlin_test.utils
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import android.widget.RadioButton
-import com.su.kotlin_test.R
-import java.lang.ref.WeakReference
 
 /**
  * Created by Mr.Su on 2018/2/25.

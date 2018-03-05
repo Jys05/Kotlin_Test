@@ -1,8 +1,6 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
-import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity

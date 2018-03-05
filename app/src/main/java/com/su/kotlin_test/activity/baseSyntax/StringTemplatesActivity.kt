@@ -1,7 +1,6 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
-import android.support.annotation.NonNull
 import android.view.View
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity

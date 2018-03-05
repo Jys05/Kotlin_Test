@@ -1,13 +1,10 @@
 package com.su.kotlin_test.utils
 
 import android.annotation.SuppressLint
-import android.support.v7.app.AppCompatActivity
 import android.text.Html
 import android.text.method.LinkMovementMethod
 import android.widget.TextView
 import com.su.kotlin_test.R
-import kotlinx.android.synthetic.main.activity_define_var.*
-import kotlinx.android.synthetic.main.activity_define_var.view.*
 import java.lang.ref.WeakReference
 
 /**

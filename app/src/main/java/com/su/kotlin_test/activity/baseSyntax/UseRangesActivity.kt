@@ -1,7 +1,6 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.su.kotlin_test.R
