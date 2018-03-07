@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.view.View
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
-import kotlinx.android.synthetic.main.activity_base_grammar.*
+import kotlinx.android.synthetic.main.activity_base_syntax.*
 
 /**
  * Created by Sujiayong on 2018/2/24.
  */
 class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
 
-    override fun setLayoutResId(): Int = R.layout.activity_base_grammar
+    override fun setLayoutResId(): Int = R.layout.activity_base_syntax
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }

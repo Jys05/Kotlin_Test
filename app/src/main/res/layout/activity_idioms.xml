@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.idioms.IdiomsActivity">
+
+    <Button
+        android:id="@+id/btnCreatingDTOs"
+        style="@style/btn_lwm_lhw"
+        android:text="创建 DTOs（POJOs/POCOs）"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDefaultValuesForFun"
+        style="@style/btn_lwm_lhw"
+        android:text="函数的默认参数"
+        android:textAllCaps="false"/>
+</LinearLayout>
