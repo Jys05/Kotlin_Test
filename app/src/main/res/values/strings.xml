@@ -62,6 +62,7 @@
 
     <string name="CollectionsActivity">使用集合——界面</string>
     <string name="CreatingInstancesActivity">创建基本类及其实例——界面</string>
+    <string name="CreatingDtosActivity">创建Dtos类——界面</string>
 
 
 </resources>

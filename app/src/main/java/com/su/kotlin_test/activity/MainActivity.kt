@@ -40,7 +40,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         var intent = Intent()
 
         when (v?.id) {
-        //基本语法——界面
+            //Dtos类——界面
             btnBaseGrammar.id -> intent.setClass(this, BaseSyntaxActivity::class.java)
 
         }

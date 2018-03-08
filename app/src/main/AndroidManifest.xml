@@ -55,6 +55,10 @@
 
         <activity android:name=".activity.baseSyntax.CreatingInstancesActivity"
                   android:label="@string/CreatingInstancesActivity"/>
+
+        <!-- Idioms -->
+        <activity android:name=".activity.idioms.CreatingDtosActivity"
+                  android:label="@string/CreatingDtosActivity"/>
     </application>
 
 </manifest>
