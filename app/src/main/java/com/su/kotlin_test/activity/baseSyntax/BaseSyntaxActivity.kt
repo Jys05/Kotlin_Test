@@ -12,7 +12,9 @@ import kotlinx.android.synthetic.main.activity_base_syntax.*
  */
 class BaseSyntaxActivity : BaseActivity(), View.OnClickListener {
 
-    override fun setLayoutResId(): Int = R.layout.activity_base_syntax
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html"
+
+    override fun layoutResId(): Int = R.layout.activity_base_syntax
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }

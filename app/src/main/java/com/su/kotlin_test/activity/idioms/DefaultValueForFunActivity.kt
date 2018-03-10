@@ -9,7 +9,13 @@ import com.su.kotlin_test.frame.BaseActivity
  */
 class DefaultValueForFunActivity : BaseActivity() {
 
-    override fun setLayoutResId(): Int = R.layout.activity_common_for_radio_group
+    var checkedIdForRbFun = 1           //对于函数RadioButton的Id
+    var checkedIdForRbValue = 1           //对于值RadioButton的Id
+
+
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/idioms.html#函数的默认参数"
+
+    override fun layoutResId(): Int = R.layout.activity_common_double_radio_group
 
     override fun getIntentExtras(extrasBundle: Bundle) {
 
@@ -24,11 +30,9 @@ class DefaultValueForFunActivity : BaseActivity() {
     }
 
     override fun iniitListener() {
-
     }
 
-    fun defautValue(num: Int = 10 , str : String = "This is default value") {
-
-
+    fun defautValue(num: Int  , str : String = "This is default value") :String {
+        return str+num.toString()
     }
 }

@@ -2,6 +2,9 @@ package com.su.kotlin_test.frame
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.TextView
+import com.su.kotlin_test.R
+import com.su.kotlin_test.utils.TvSpanUtil
 
 /**
  * Created by Sujiayong on 2018/2/24.
@@ -11,11 +14,14 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(setLayoutResId())
+        setContentView(layoutResId())
 
         if (this.intent.extras != null) {
             this.getIntentExtras(this.intent.extras)
         }
+
+        //设置Kotlin网址
+        setTvKotlinWeb()
 
         initData()
 
@@ -24,7 +30,15 @@ abstract class BaseActivity : AppCompatActivity() {
         iniitListener()
     }
 
-    abstract fun setLayoutResId(): Int
+    private fun setTvKotlinWeb() {
+        val url = setKotlinWeb()
+        val tvKotlinWeb = findViewById<TextView>(R.id.tvKotlinWeb)
+        if(tvKotlinWeb!=null){
+            TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+        }
+    }
+
+    abstract fun layoutResId(): Int
 
     abstract fun getIntentExtras(extrasBundle: Bundle)
 
@@ -33,4 +47,6 @@ abstract class BaseActivity : AppCompatActivity() {
     abstract fun initView()
 
     abstract fun iniitListener()
+
+    abstract fun setKotlinWeb():String
 }

@@ -1,8 +1,8 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.view.View
-import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton
@@ -17,14 +17,14 @@ class ForAndWhileLoopActivity : BaseActivity() {
 
     var checkedIdForRadioButton = 1
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用-for-循环"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/control-flow.html#for-循环"
     val urlFlagForDetails = "for循环"
     val urlForDetails2 = "https://www.kotlincn.net/docs/reference/control-flow.html#while-循环"
     val urlFlagForDetails2 = "while循环"
 
+    override fun setKotlinWeb(): String  = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用-for-循环"
 
-    override fun setLayoutResId(): Int = R.layout.activity_common_for_radio_group
+    override fun layoutResId(): Int = R.layout.activity_common_single_radio_group
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }
@@ -34,7 +34,7 @@ class ForAndWhileLoopActivity : BaseActivity() {
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
 
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
         tvKotlinDetailsWeb.append(" 和 ")
@@ -104,7 +104,7 @@ class ForAndWhileLoopActivity : BaseActivity() {
                 1 -> tvRunResult.text = forLoop1()
                 2 -> tvRunResult.text = forLoop2()
                 3 -> tvRunResult.text = whileLoop()
-                else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+                else -> Snackbar.make(v!!,R.string.error_code, Snackbar.LENGTH_SHORT).show()
             }
         }
 

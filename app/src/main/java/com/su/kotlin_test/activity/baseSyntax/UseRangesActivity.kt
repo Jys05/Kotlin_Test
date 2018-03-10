@@ -1,8 +1,8 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.view.View
-import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton
@@ -17,11 +17,12 @@ class UseRangesActivity : BaseActivity() {
 
     var checkedIdForRadioButton = 1
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用区间range"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/ranges.html"
     val urlFlagForDetails = "区间"
 
-    override fun setLayoutResId(): Int = R.layout.activity_common_for_radio_group
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用区间range"
+
+    override fun layoutResId(): Int = R.layout.activity_common_single_radio_group
 
     override fun getIntentExtras(extrasBundle: Bundle) {
 
@@ -33,7 +34,7 @@ class UseRangesActivity : BaseActivity() {
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
 
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
@@ -87,7 +88,7 @@ class UseRangesActivity : BaseActivity() {
             when (checkedIdForRadioButton) {
                 1 -> tvRunResult.text = useRanges1()
                 2 -> tvRunResult.text = useRanges2()
-                else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+                else -> Snackbar.make(v!!,R.string.error_code, Snackbar.LENGTH_SHORT).show()
             }
         }
 

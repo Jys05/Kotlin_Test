@@ -1,8 +1,8 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.view.View
-import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton
@@ -17,13 +17,14 @@ class TypeChecksActivity : BaseActivity() {
 
     var checkedIdForRadioButton = 1
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用类型检测及自动类型转换"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/classes.html"
     val urlFlagForDetails = "类"
     val urlForDetails2 = "https://www.kotlincn.net/docs/reference/typecasts.html"
     val urlFlagForDetails2 = "类型转换"
 
-    override fun setLayoutResId(): Int = R.layout.activity_type_checks
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用类型检测及自动类型转换"
+
+    override fun layoutResId(): Int = R.layout.activity_type_checks
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }
@@ -33,7 +34,7 @@ class TypeChecksActivity : BaseActivity() {
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
 
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
         tvKotlinDetailsWeb.append(" 和 ")
@@ -85,7 +86,7 @@ class TypeChecksActivity : BaseActivity() {
                 1 -> tvRunResult.text = getStringLength1("使用类型检测及自动类型转换").toString()
                 2 -> tvRunResult.text = getStringLength2("使用类型检测及自动类型转换").toString()
                 3 -> tvRunResult.text = getStringLength3("使用类型检测及自动类型转换").toString()
-                else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+                else -> Snackbar.make(v!!,R.string.error_code, Snackbar.LENGTH_SHORT).show()
             }
         }
 

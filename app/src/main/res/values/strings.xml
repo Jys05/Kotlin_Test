@@ -61,8 +61,18 @@
     <string name="UseRangesActivity">使用区间（range）——界面</string>
 
     <string name="CollectionsActivity">使用集合——界面</string>
+
     <string name="CreatingInstancesActivity">创建基本类及其实例——界面</string>
+
+
+
+    <string name="IdiomsActivity">习惯用法——界面</string>
+    <string name="idioms">习惯用法</string>
+
+
     <string name="CreatingDtosActivity">创建Dtos类——界面</string>
+
+    <string name="DefaultValueForFunActivity">函数的默认参数——界面</string>
 
 
 </resources>

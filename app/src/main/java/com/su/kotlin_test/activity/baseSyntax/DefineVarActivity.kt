@@ -1,9 +1,9 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.view.View
 import android.widget.RadioGroup
-import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton.Companion.createRadioButton
@@ -21,13 +21,14 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     var varFunText: String = ""
     var globalVarFunText: String = ""
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义变量"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/properties.html"
     val urlFlagForDetails = "属性和字段"
     var urlForBlog = "http://blog.danlew.net/2017/05/30/mutable-vals-in-kotlin/#"
     var urlFlag = "介绍var与val的博客"
 
-    override fun setLayoutResId(): Int = R.layout.activity_define_var
+    override fun setKotlinWeb(): String= "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义变量"
+
+    override fun layoutResId(): Int = R.layout.activity_define_var
 
     override fun getIntentExtras(extrasBundle: Bundle) {
 
@@ -54,7 +55,7 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
 
     override fun initView() {
         //设置官网链接
-        setTvSpan(tvKotlinWeb, url, url)
+//        setTvSpan(tvKotlinWeb, url, url)
         setTvSpan(tvKotlinDetailsWeb , urlForDetails ,urlFlagForDetails)
 
         //设置总结
@@ -81,7 +82,6 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
 
 
     override fun onCheckedChanged(group: RadioGroup?, checkedId: Int) {
-        Toast.makeText(this, "radioButton的id为" + checkedId.toString(), Toast.LENGTH_SHORT).show()
         checkedIdForRadioButton = checkedId
     }
 
@@ -90,7 +90,7 @@ class DefineVarActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
             1 -> tvResult.text = funForVal()
             2 -> tvResult.text = funForVar()
             3 -> tvResult.text = funForTopLevelVar()
-            else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+            else -> Snackbar.make(v!!,R.string.error_code, Snackbar.LENGTH_SHORT).show()
         }
     }
 

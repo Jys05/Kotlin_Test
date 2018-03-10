@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_comments.*
  */
 class CommentsActivity :BaseActivity(){
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#注释"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/kotlin-doc.html"
     val urlFlagForDetails = "编写 Kotlin 代码文档"
     val sumUp = "\n与Java和JavaScript一样，\n// 这是一个行注释\n\n" +
@@ -21,8 +20,9 @@ class CommentsActivity :BaseActivity(){
             "\n\n在Android Studio中快捷键也一致：\n选中文本后，ctrl+/（这是单行）；\n" +
             "选中文本后，ctrl+shift+/（这是多行）；\n"
 
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#注释"
 
-    override fun setLayoutResId(): Int = R.layout.activity_comments
+    override fun layoutResId(): Int = R.layout.activity_comments
 
     override fun getIntentExtras(extrasBundle: Bundle) {
 
@@ -33,7 +33,7 @@ class CommentsActivity :BaseActivity(){
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         tvSumUp.append(sumUp)

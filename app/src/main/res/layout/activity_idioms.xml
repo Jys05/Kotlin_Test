@@ -8,6 +8,10 @@
     android:background="@color/colorBg"
     tools:context=".activity.idioms.IdiomsActivity">
 
+    <TextView
+        android:id="@+id/tvKotlinWeb"
+        style="@style/style_tv.style_tv_kotlin_web"/>
+
     <Button
         android:id="@+id/btnCreatingDTOs"
         style="@style/btn_lwm_lhw"

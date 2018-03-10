@@ -1,13 +1,13 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.view.View
-import android.widget.Toast
 import com.su.kotlin_test.R
 import com.su.kotlin_test.frame.BaseActivity
 import com.su.kotlin_test.utils.CreateRadioButton
 import com.su.kotlin_test.utils.TvSpanUtil
-import kotlinx.android.synthetic.main.activity_common_for_radio_group.*
+import kotlinx.android.synthetic.main.activity_common_single_radio_group.*
 
 /**
  * Created by Mr.Su on 2018/3/4.
@@ -18,12 +18,12 @@ class WhenExpressionActivity : BaseActivity() {
 
     var checkedIdForRadioButton = 1
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用-when-表达式"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/control-flow.html#when-表达式"
     val urlFlagForDetails = "when 表达式"
 
+    override fun setKotlinWeb(): String= "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用-when-表达式"
 
-    override fun setLayoutResId(): Int = R.layout.activity_common_for_radio_group
+    override fun layoutResId(): Int = R.layout.activity_common_single_radio_group
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }
@@ -34,7 +34,7 @@ class WhenExpressionActivity : BaseActivity() {
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         tvFun.text = "\n使用 when 表达式：\n    fun describe(obj: Any): String =\n" +
@@ -110,7 +110,7 @@ class WhenExpressionActivity : BaseActivity() {
                 6 -> tvRunResult.text = describe("Kotlin")
                 7 -> tvRunResult.text = describe(5.toLong())
                 8 -> tvRunResult.text = describe(6.66)
-                else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+                else -> Snackbar.make(v!!,R.string.error_code,Snackbar.LENGTH_SHORT).show()
             }
         }
 

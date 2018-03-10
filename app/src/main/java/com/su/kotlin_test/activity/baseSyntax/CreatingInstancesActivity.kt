@@ -11,14 +11,14 @@ import com.su.kotlin_test.frame.BaseActivity
  */
 class CreatingInstancesActivity : BaseActivity() {
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#创建基本类及其实例"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/classes.html"
     val urlFlagForDetails = "类"
     val urlForDetails2 = "https://www.kotlincn.net/docs/reference/object-declarations.html"
     val urlFlagForDetails2 = "对象与实例"
 
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#创建基本类及其实例"
 
-    override fun setLayoutResId(): Int = R.layout.activity_common
+    override fun layoutResId(): Int = R.layout.activity_common
 
     override fun getIntentExtras(extrasBundle: Bundle) {
 

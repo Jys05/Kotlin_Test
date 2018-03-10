@@ -28,6 +28,7 @@
 
         <TextView
             android:id="@+id/tvRadioGroupDescribe"
+            android:visibility="gone"
             style="@style/style_tv"/>
 
         <RadioGroup

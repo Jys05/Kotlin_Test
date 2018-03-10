@@ -57,8 +57,14 @@
                   android:label="@string/CreatingInstancesActivity"/>
 
         <!-- Idioms -->
+        <activity android:name=".activity.idioms.IdiomsActivity"
+                  android:label="@string/IdiomsActivity"/>
+
         <activity android:name=".activity.idioms.CreatingDtosActivity"
                   android:label="@string/CreatingDtosActivity"/>
+
+        <activity android:name=".activity.idioms.DefaultValueForFunActivity"
+                  android:label="@string/DefaultValueForFunActivity"/>
     </application>
 
 </manifest>

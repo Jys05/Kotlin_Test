@@ -1,6 +1,7 @@
 package com.su.kotlin_test.activity.baseSyntax
 
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.text.TextUtils
 import android.view.View
 import android.widget.RadioGroup
@@ -18,11 +19,13 @@ import kotlinx.android.synthetic.main.activity_define_fun.*
 class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnCheckedChangeListener {
 
     var checkedIdForRadioButton = 1
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义函数"
+
     val urlForDetails = "https://www.kotlincn.net/docs/reference/functions.html"
     val urlFlagForDetails = "函数"
 
-    override fun setLayoutResId(): Int = R.layout.activity_define_fun
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#定义函数"
+
+    override fun layoutResId(): Int = R.layout.activity_define_fun
 
     override fun getIntentExtras(extrasBundle: Bundle) {
 
@@ -33,7 +36,7 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     }
 
     override fun initView() {
-        setTvSpan(tvKotlinWeb, url, url)
+//        setTvSpan(tvKotlinWeb, url, url)
         setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         var sum = "\n带有两个 Int 参数、返回 Int 的函数：\nfun sum(a: Int, b: Int): Int {\n\t\treturn a + b\n}"
@@ -83,10 +86,10 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
                 2 -> tvResult.text = sum2(fristNum, secondNum).toString()
                 3 -> tvResult.text = printSum(fristNum, secondNum)
                 4 -> tvResult.text = printSum2(fristNum, secondNum)
-                else -> Toast.makeText(this, getString(R.string.error_code), Toast.LENGTH_SHORT).show()
+                else -> Snackbar.make(v!!,R.string.error_code, Snackbar.LENGTH_SHORT).show()
             }
         } catch (e: NumberFormatException) {
-            Toast.makeText(this, getString(R.string.tip_for_NumberFormatException), Toast.LENGTH_SHORT).show()
+            Snackbar.make(v!!,R.string.tip_for_NumberFormatException,Snackbar.LENGTH_SHORT ).show()
             return
         }
 
@@ -94,7 +97,6 @@ class DefineFunActivity : BaseActivity(), View.OnClickListener, RadioGroup.OnChe
     }
 
     override fun onCheckedChanged(group: RadioGroup?, checkedId: Int) {
-        Toast.makeText(this, "radioButton的id为" + checkedId.toString(), Toast.LENGTH_SHORT).show()
         checkedIdForRadioButton = checkedId
     }
 

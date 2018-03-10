@@ -10,8 +10,9 @@ import com.su.kotlin_test.frame.BaseActivity
  */
 class CreatingDtosActivity : BaseActivity(){
 
+    override fun setKotlinWeb(): String ="https://www.kotlincn.net/docs/reference/idioms.html#创建-dtospojospocos"
 
-    override fun setLayoutResId(): Int = R.layout.activity_common
+    override fun layoutResId(): Int = R.layout.activity_common
 
 
     override fun getIntentExtras(extrasBundle: Bundle) {

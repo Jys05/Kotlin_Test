@@ -22,16 +22,21 @@
             android:id="@+id/tvKotlinDetailsWeb"
             style="@style/style_tv_kotlin_details_web"/>
 
-        <TextView
-            android:id="@+id/tvFun"
-            style="@style/style_tv"/>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupForFun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 
         <TextView
             android:id="@+id/tvRadioGroupDescribe"
+            android:visibility="gone"
             style="@style/style_tv"/>
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/radioGroupForValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

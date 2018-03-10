@@ -13,11 +13,12 @@ import kotlinx.android.synthetic.main.activity_nullable_value.*
  */
 class NullableValueActivity : BaseActivity() {
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用可空值及-null-检测"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/null-safety.html"
     val urlFlagForDetails = "空安全"
 
-    override fun setLayoutResId(): Int = R.layout.activity_nullable_value
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用可空值及-null-检测"
+
+    override fun layoutResId(): Int = R.layout.activity_nullable_value
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }
@@ -27,7 +28,7 @@ class NullableValueActivity : BaseActivity() {
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         tvFun.text = "    fun parseInt(str: String): Int? {\n" +

@@ -12,6 +12,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/tvKotlinWeb"
+            style="@style/style_tv.style_tv_kotlin_web"/>
+
         <Button
             android:id="@+id/btnDefineFun"
             style="@style/btn_lwm_lhw"

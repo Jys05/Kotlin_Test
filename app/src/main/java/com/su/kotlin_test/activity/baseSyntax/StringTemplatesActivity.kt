@@ -13,11 +13,12 @@ import kotlinx.android.synthetic.main.activity_string_templates.*
  */
 class StringTemplatesActivity : BaseActivity() {
 
-    val url = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用字符串模板"
     val urlForDetails = "https://www.kotlincn.net/docs/reference/basic-types.html#字符串模板"
     val urlFlagForDetails = "基本类型 #字符串模板"
 
-    override fun setLayoutResId(): Int = R.layout.activity_string_templates
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/basic-syntax.html#使用字符串模板"
+
+    override fun layoutResId(): Int = R.layout.activity_string_templates
 
     override fun getIntentExtras(extrasBundle: Bundle) {
     }
@@ -27,7 +28,7 @@ class StringTemplatesActivity : BaseActivity() {
 
     override fun initView() {
         //设置官网链接
-        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
+//        TvSpanUtil.setTvSpan(tvKotlinWeb, url, url)
         TvSpanUtil.setTvSpan(tvKotlinDetailsWeb, urlForDetails, urlFlagForDetails)
 
         tvFun.text = "        var a = 1\n" +
