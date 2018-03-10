@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBg"
     tools:context="com.su.kotlin_test.activity.MainActivity">
 
     <Button
@@ -14,5 +14,12 @@
         android:text="@string/text_base_syntax"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnIdioms"
+        style="@style/btn_lwm_lhw"
+        android:layout_marginTop="8dp"
+        android:text="@string/idioms"
+        app:layout_constraintTop_toBottomOf="@+id/btnBaseGrammar"/>
 
 </android.support.constraint.ConstraintLayout>
