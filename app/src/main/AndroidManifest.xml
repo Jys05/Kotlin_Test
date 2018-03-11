@@ -60,7 +60,7 @@
         <activity android:name=".activity.idioms.IdiomsActivity"
                   android:label="@string/IdiomsActivity"/>
 
-        <activity android:name=".activity.idioms.CreatingDtosActivity"
+        <activity android:name=".activity.idioms.dtos.CreatingDtosActivity"
                   android:label="@string/CreatingDtosActivity"/>
 
         <activity android:name=".activity.idioms.DefaultValueForFunActivity"

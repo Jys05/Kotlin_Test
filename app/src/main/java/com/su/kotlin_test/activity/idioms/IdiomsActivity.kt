@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.su.kotlin_test.R
+import com.su.kotlin_test.activity.idioms.dtos.CreatingDtosActivity
 import com.su.kotlin_test.frame.BaseActivity
 import kotlinx.android.synthetic.main.activity_idioms.*
 
