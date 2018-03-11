@@ -9,6 +9,8 @@ import kotlinx.android.synthetic.main.activity_common_double_radio_group.*
 
 /**
  * Created by Mr.Su on 2018/3/8.
+ *
+ * 函数的默认参数
  */
 class DefaultValueForFunActivity : BaseActivity() {
 
@@ -105,6 +107,4 @@ class DefaultValueForFunActivity : BaseActivity() {
     fun defautValue1(num: Int = 10, str: String = "kotlin的函数的默认参数"): String = "Num is $num,Str is $str"
 
     fun defautValue2(num: Int, str: String = "kotlin的函数的默认参数"): String = "Num is $num,Str is $str"
-
-    fun defautValue3(str: String = "kotlin的函数的默认参数33333333", num: Int): String = "Num is $num,Str is $str"
 }
