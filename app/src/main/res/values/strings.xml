@@ -83,6 +83,8 @@
     <string name="list_filter">过滤List</string>
     <string name="added">添加了：</string>
     <string name="list_empty">List 为空</string>
+    <string name="StringInterpolationActivity">String 内插——界面</string>
+    <string name="string_interpolation">String内插</string>
 
 
 </resources>

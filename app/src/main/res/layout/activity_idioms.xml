@@ -15,18 +15,20 @@
     <Button
         android:id="@+id/btnCreatingDTOs"
         style="@style/btn_lwm_lhw"
-        android:text="@string/create_datos"
-        android:textAllCaps="false"/>
+        android:text="@string/create_datos"/>
 
     <Button
         android:id="@+id/btnDefaultValuesForFun"
         style="@style/btn_lwm_lhw"
-        android:text="@string/default_value"
-        android:textAllCaps="false"/>
+        android:text="@string/default_value"/>
 
     <Button
         android:id="@+id/btnListFilter"
         style="@style/btn_lwm_lhw"
-        android:text="@string/list_filter"
-        android:textAllCaps="false"/>
+        android:text="@string/list_filter"/>
+
+    <Button
+        android:id="@+id/btnStringInterpolation"
+        style="@style/btn_lwm_lhw"
+        android:text="@string/string_interpolation"/>
 </LinearLayout>

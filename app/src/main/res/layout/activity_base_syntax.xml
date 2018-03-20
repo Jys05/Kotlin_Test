@@ -54,34 +54,29 @@
         <Button
             android:id="@+id/btnForAndWhileLoop"
             style="@style/btn_lwm_lhw"
-            android:textAllCaps="false"
             android:text="@string/text_for_while_loop"/>
 
         <Button
             android:id="@+id/btnWhenExpression"
             style="@style/btn_lwm_lhw"
-            android:textAllCaps="false"
             android:text="@string/text_when_expression"/>
 
 
         <Button
             android:id="@+id/btnUseRanges"
             style="@style/btn_lwm_lhw"
-            android:textAllCaps="false"
             android:text="@string/text_use_range"/>
 
 
         <Button
             android:id="@+id/btnCollections"
             style="@style/btn_lwm_lhw"
-            android:textAllCaps="false"
             android:text="@string/text_collections"/>
 
 
         <Button
             android:id="@+id/btnCreatingInstances"
             style="@style/btn_lwm_lhw"
-            android:textAllCaps="false"
             android:text="@string/text_creating_instances"/>
 
     </LinearLayout>

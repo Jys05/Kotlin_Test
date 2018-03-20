@@ -65,6 +65,7 @@
     
     
     <style name="btn_lwm_lhw" parent="style_lwm_lhw">
+        <item name="android:textAllCaps">false</item>
         <item name="android:layout_margin">8dp</item>
     </style>
 

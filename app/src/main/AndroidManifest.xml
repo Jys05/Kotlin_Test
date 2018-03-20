@@ -68,6 +68,9 @@
 
         <activity android:name=".activity.idioms.ListFilterActivity"
                   android:label="@string/ListFilterActivity"/>
+
+        <activity android:name=".activity.idioms.StringInterpolationActivity"
+                  android:label="@string/StringInterpolationActivity"/>
     </application>
 
 </manifest>
