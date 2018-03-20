@@ -36,4 +36,9 @@
         android:id="@+id/btnInstanceChecks"
         style="@style/btn_lwm_lhw"
         android:text="@string/instance_checks"/>
+
+    <Button
+        android:id="@+id/btnMapOrPair"
+        style="@style/btn_lwm_lhw"
+        android:text="@string/traversing_map_or_pairs"/>
 </LinearLayout>

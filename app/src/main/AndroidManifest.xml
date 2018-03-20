@@ -74,6 +74,9 @@
 
         <activity android:name=".activity.idioms.InstanceChecksActivity"
                   android:label="@string/InstanceChecksActivity"/>
+
+        <activity android:name=".activity.idioms.MapOrPairActivity"
+                  android:label="@string/MapOrPairActivity"/>
     </application>
 
 </manifest>

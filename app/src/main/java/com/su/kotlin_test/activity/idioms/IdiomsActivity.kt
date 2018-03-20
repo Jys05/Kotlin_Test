@@ -37,6 +37,7 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
         btnListFilter.setOnClickListener(this)
         btnStringInterpolation.setOnClickListener(this)
         btnInstanceChecks.setOnClickListener(this)
+        btnMapOrPair.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -52,6 +53,8 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
             btnStringInterpolation.id  -> intent.setClass(this , StringInterpolationActivity::class.java)
 
             btnInstanceChecks.id  -> intent.setClass(this , InstanceChecksActivity::class.java)
+
+            btnMapOrPair.id  -> intent.setClass(this , MapOrPairActivity::class.java)
         }
 
         startActivity(intent)
