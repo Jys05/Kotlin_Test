@@ -38,6 +38,8 @@ abstract class BaseActivity : AppCompatActivity() {
         }
     }
 
+    abstract fun setKotlinWeb():String
+
     abstract fun layoutResId(): Int
 
     abstract fun getIntentExtras(extrasBundle: Bundle)
@@ -47,6 +49,4 @@ abstract class BaseActivity : AppCompatActivity() {
     abstract fun initView()
 
     abstract fun iniitListener()
-
-    abstract fun setKotlinWeb():String
 }
