@@ -15,12 +15,18 @@
     <Button
         android:id="@+id/btnCreatingDTOs"
         style="@style/btn_lwm_lhw"
-        android:text="创建 DTOs（POJOs/POCOs）"
+        android:text="@string/create_datos"
         android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btnDefaultValuesForFun"
         style="@style/btn_lwm_lhw"
-        android:text="函数的默认参数"
+        android:text="@string/default_value"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnListFilter"
+        style="@style/btn_lwm_lhw"
+        android:text="@string/list_filter"
         android:textAllCaps="false"/>
 </LinearLayout>

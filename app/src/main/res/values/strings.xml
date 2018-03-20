@@ -73,6 +73,16 @@
     <string name="CreatingDtosActivity">创建Dtos类——界面</string>
 
     <string name="DefaultValueForFunActivity">函数的默认参数——界面</string>
+    <string name="create_datos">创建 DTOs（POJOs/POCOs）</string>
+    <string name="default_value">函数的默认参数</string>
+
+
+    <string name="ListFilterActivity">过滤List——界面</string>
+    <string name="input_string">请输入字符</string>
+    <string name="add">添加</string>
+    <string name="list_filter">过滤List</string>
+    <string name="added">添加了：</string>
+    <string name="list_empty">List 为空</string>
 
 
 </resources>

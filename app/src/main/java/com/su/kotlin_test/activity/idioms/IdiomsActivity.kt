@@ -33,7 +33,7 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
 
     override fun iniitListener() {
         btnCreatingDTOs.setOnClickListener(this)
-        btnDefaultValuesForFun.setOnClickListener(this)
+        btnListFilter.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -43,6 +43,8 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
             btnCreatingDTOs.id  -> intent.setClass(this , CreatingDtosActivity::class.java)
 
             btnDefaultValuesForFun.id  -> intent.setClass(this , DefaultValueForFunActivity::class.java)
+
+            btnListFilter.id  -> intent.setClass(this , ListFilterActivity::class.java)
         }
 
         startActivity(intent)

@@ -65,6 +65,9 @@
 
         <activity android:name=".activity.idioms.DefaultValueForFunActivity"
                   android:label="@string/DefaultValueForFunActivity"/>
+
+        <activity android:name=".activity.idioms.ListFilterActivity"
+                  android:label="@string/ListFilterActivity"/>
     </application>
 
 </manifest>
