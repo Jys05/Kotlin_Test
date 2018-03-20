@@ -85,6 +85,8 @@
     <string name="list_empty">List 为空</string>
     <string name="StringInterpolationActivity">String 内插——界面</string>
     <string name="string_interpolation">String内插</string>
+    <string name="InstanceChecksActivity">类型判断——界面</string>
+    <string name="instance_checks">类型判断</string>
 
 
 </resources>

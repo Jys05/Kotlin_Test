@@ -31,4 +31,9 @@
         android:id="@+id/btnStringInterpolation"
         style="@style/btn_lwm_lhw"
         android:text="@string/string_interpolation"/>
+
+    <Button
+        android:id="@+id/btnInstanceChecks"
+        style="@style/btn_lwm_lhw"
+        android:text="@string/instance_checks"/>
 </LinearLayout>

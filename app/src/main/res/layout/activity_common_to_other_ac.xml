@@ -22,8 +22,7 @@
 
         <Button
             android:id="@+id/btnToOtherActivity"
-            style="@style/btn_lwm_lhw"
-            android:text="跳转至‘使用字符串模板界面’"/>
+            style="@style/btn_lwm_lhw"/>
 
         <TextView
             android:id="@+id/tvSumUp"

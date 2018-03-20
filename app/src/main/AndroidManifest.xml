@@ -71,6 +71,9 @@
 
         <activity android:name=".activity.idioms.StringInterpolationActivity"
                   android:label="@string/StringInterpolationActivity"/>
+
+        <activity android:name=".activity.idioms.InstanceChecksActivity"
+                  android:label="@string/InstanceChecksActivity"/>
     </application>
 
 </manifest>

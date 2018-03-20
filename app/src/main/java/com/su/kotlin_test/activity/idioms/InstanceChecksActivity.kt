@@ -5,16 +5,17 @@ import android.os.Bundle
 import android.view.View
 import com.su.kotlin_test.R
 import com.su.kotlin_test.activity.baseSyntax.StringTemplatesActivity
+import com.su.kotlin_test.activity.baseSyntax.WhenExpressionActivity
 import com.su.kotlin_test.frame.BaseActivity
 import kotlinx.android.synthetic.main.activity_common_to_other_ac.*
 
 /**
  * Created by Mr.Su on 2018/3/20.
- * String 内插——界面
+ * 类型判断——界面
  */
 
-class StringInterpolationActivity : BaseActivity(), View.OnClickListener {
-    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/idioms.html#string-内插"
+class InstanceChecksActivity : BaseActivity(), View.OnClickListener {
+    override fun setKotlinWeb(): String = "https://www.kotlincn.net/docs/reference/idioms.html#类型判断"
 
     override fun layoutResId(): Int = R.layout.activity_common_to_other_ac
 
@@ -27,9 +28,10 @@ class StringInterpolationActivity : BaseActivity(), View.OnClickListener {
     }
 
     override fun initView() {
-        btnToOtherActivity.text = "跳转至‘使用字符串模板界面’"
+        btnToOtherActivity.text = "跳转至‘使用 when 表达式’界面"
 
-        val sumUpStr = "\n和Gradle的使用是一致的"
+        val sumUpStr = "\n类型判断关键是 is \n" +
+                "用法可见‘when 表达式’界面"
         tvSumUp.append(sumUpStr)
     }
 
@@ -38,7 +40,7 @@ class StringInterpolationActivity : BaseActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        val intent = Intent(this, StringTemplatesActivity::class.java)
+        val intent = Intent(this, WhenExpressionActivity::class.java)
         startActivity(intent)
     }
 
