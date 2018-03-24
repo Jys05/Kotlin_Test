@@ -57,7 +57,15 @@ class MapOrPairActivity : BaseActivity() {
                 "        return result\n" +
                 "    }"
 
-        val sumUpStr = "\nPair型：\n" +
+        val sumUpStr = "\nMap型：\n" +
+                "   * A collection that holds pairs of objects (keys and values) and supports efficiently retrieving\n" +
+                "   * the value corresponding to each key. Map keys are unique; the map holds only one value for each key.\n" +
+                "   * Methods in this interface support only read-only access to the map; read-write access is supported through\n" +
+                "   * the [MutableMap] interface.\n" +
+                "   * @param K the type of map keys. The map is invariant on its key type, as it\n" +
+                "   *          can accept key as a parameter (of [containsKey] for example) and return it in [keys] set.\n" +
+                "   * @param V the type of map values. The map is covariant on its value type.\n\n" +
+                "Pair型：\n" +
                 "   * Represents a generic pair of two values.\n" +
                 "   *\n" +
                 "   * There is no meaning attached to values in this class, it can be used for any purpose.\n" +
@@ -67,21 +75,13 @@ class MapOrPairActivity : BaseActivity() {
                 "   * @param B type of the second value.\n" +
                 "   * @property first First value.\n" +
                 "   * @property second Second value.\n" +
-                "   * @constructor Creates a new instance of Pair.\n\n" +
-                "Map型：\n" +
-                "   * A collection that holds pairs of objects (keys and values) and supports efficiently retrieving\n" +
-                "   * the value corresponding to each key. Map keys are unique; the map holds only one value for each key.\n" +
-                "   * Methods in this interface support only read-only access to the map; read-write access is supported through\n" +
-                "   * the [MutableMap] interface.\n" +
-                "   * @param K the type of map keys. The map is invariant on its key type, as it\n" +
-                "   *          can accept key as a parameter (of [containsKey] for example) and return it in [keys] set.\n" +
-                "   * @param V the type of map values. The map is covariant on its value type."
+                "   * @constructor Creates a new instance of Pair."
         tvSumUp.append(sumUpStr)
 
     }
 
     override fun iniitListener() {
-        btnRun.setOnClickListener(View.OnClickListener { tvRunResult.text = processMap() })
+        btnRun.setOnClickListener({ tvRunResult.text = processMap() })
     }
 
     private fun processMap(): String {
