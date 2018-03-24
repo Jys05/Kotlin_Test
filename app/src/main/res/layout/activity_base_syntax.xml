@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBg"
-    tools:context="com.su.kotlin_test.activity.baseSyntax.BaseSyntaxActivity">
+    tools:context="com.su.kotlin.activity.baseSyntax.BaseSyntaxActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

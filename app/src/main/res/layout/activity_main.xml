@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBg"
     android:orientation="vertical"
-    tools:context="com.su.kotlin_test.activity.MainActivity">
+    tools:context="com.su.kotlin.activity.MainActivity">
 
     <TextView
         android:id="@+id/tvKotlinWeb"

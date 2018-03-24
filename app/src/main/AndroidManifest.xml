@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.su.kotlin_test">
+          package="com.su.kotlin">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="com.su.kotlin.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,65 +17,65 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.baseSyntax.BaseSyntaxActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.BaseSyntaxActivity"
                   android:label="@string/BaseSyntaxActivity"/>
 
-        <activity android:name=".activity.baseSyntax.DefineFunActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.DefineFunActivity"
                   android:label="@string/DefineFunActivity"/>
 
-        <activity android:name=".activity.baseSyntax.DefineVarActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.DefineVarActivity"
                   android:label="@string/DefineVarActivity"/>
 
-        <activity android:name=".activity.baseSyntax.CommentsActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.CommentsActivity"
                   android:label="@string/CommentsActivity"/>
 
-        <activity android:name=".activity.baseSyntax.StringTemplatesActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.StringTemplatesActivity"
                   android:label="@string/StringTemplatesActivity"/>
 
-        <activity android:name=".activity.baseSyntax.ConditionalExpressionsActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.ConditionalExpressionsActivity"
                   android:label="@string/ConditionalExpressionsActivity"/>
 
-        <activity android:name=".activity.baseSyntax.NullableValueActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.NullableValueActivity"
                   android:label="@string/NullableValueActivity"/>
 
-        <activity android:name=".activity.baseSyntax.TypeChecksActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.TypeChecksActivity"
                   android:label="@string/TypeChecksActivity"/>
 
-        <activity android:name=".activity.baseSyntax.ForAndWhileLoopActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.ForAndWhileLoopActivity"
                   android:label="@string/ForAndWhileLoopActivity"/>
 
-        <activity android:name=".activity.baseSyntax.WhenExpressionActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.WhenExpressionActivity"
                   android:label="@string/WhenExpressionActivity"/>
 
-        <activity android:name=".activity.baseSyntax.UseRangesActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.UseRangesActivity"
                   android:label="@string/UseRangesActivity"/>
 
-        <activity android:name=".activity.baseSyntax.CollectionsActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.CollectionsActivity"
                   android:label="@string/CollectionsActivity"/>
 
-        <activity android:name=".activity.baseSyntax.CreatingInstancesActivity"
+        <activity android:name="com.su.kotlin.activity.baseSyntax.CreatingInstancesActivity"
                   android:label="@string/CreatingInstancesActivity"/>
 
         <!-- Idioms -->
-        <activity android:name=".activity.idioms.IdiomsActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.IdiomsActivity"
                   android:label="@string/IdiomsActivity"/>
 
-        <activity android:name=".activity.idioms.dtos.CreatingDtosActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.dtos.CreatingDtosActivity"
                   android:label="@string/CreatingDtosActivity"/>
 
-        <activity android:name=".activity.idioms.DefaultValueForFunActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.DefaultValueForFunActivity"
                   android:label="@string/DefaultValueForFunActivity"/>
 
-        <activity android:name=".activity.idioms.ListFilterActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.ListFilterActivity"
                   android:label="@string/ListFilterActivity"/>
 
-        <activity android:name=".activity.idioms.StringInterpolationActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.StringInterpolationActivity"
                   android:label="@string/StringInterpolationActivity"/>
 
-        <activity android:name=".activity.idioms.InstanceChecksActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.InstanceChecksActivity"
                   android:label="@string/InstanceChecksActivity"/>
 
-        <activity android:name=".activity.idioms.MapOrPairActivity"
+        <activity android:name="com.su.kotlin.activity.idioms.MapOrPairActivity"
                   android:label="@string/MapOrPairActivity"/>
     </application>
 
