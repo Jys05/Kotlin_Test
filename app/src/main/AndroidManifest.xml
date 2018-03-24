@@ -77,6 +77,9 @@
 
         <activity android:name="com.su.kotlin.activity.idioms.MapOrPairActivity"
                   android:label="@string/MapOrPairActivity"/>
+
+        <activity android:name="com.su.kotlin.activity.idioms.RangActivity"
+                  android:label="@string/UseRangesActivity"/>
     </application>
 
 </manifest>
