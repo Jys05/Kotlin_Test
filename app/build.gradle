@@ -45,4 +45,7 @@ dependencies {
 
     //Material Design
     implementation 'com.android.support:design:27.0.2'
+
+    //KTX——简化部分kotlin代码
+    implementation 'androidx.core:core-ktx:0.2'
 }

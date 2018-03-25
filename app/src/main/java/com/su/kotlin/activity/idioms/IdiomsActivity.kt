@@ -39,6 +39,7 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
         btnInstanceChecks.setOnClickListener(this)
         btnMapOrPair.setOnClickListener(this)
         btnRang.setOnClickListener(this)
+        btnLazyProperty.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -58,6 +59,8 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
             btnMapOrPair.id  -> intent.setClass(this , MapOrPairActivity::class.java)
 
             btnRang.id  -> intent.setClass(this , RangActivity::class.java)
+
+            btnLazyProperty.id  -> intent.setClass(this , LazyPropertyActivity::class.java)
         }
 
         startActivity(intent)

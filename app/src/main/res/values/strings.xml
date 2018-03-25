@@ -95,6 +95,8 @@
 
     <string name="MapOrPairActivity">遍历 map/pair型list——界面</string>
     <string name="traversing_map_or_pairs">遍历 \'map\' 或 \'pair型list\'</string>
+    <string name="lazy_property">lazy属性</string>
+    <string name="LazyPropertyActivity">Lazt属性——界面</string>
 
 
 </resources>

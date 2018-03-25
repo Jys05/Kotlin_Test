@@ -80,6 +80,9 @@
 
         <activity android:name="com.su.kotlin.activity.idioms.RangActivity"
                   android:label="@string/UseRangesActivity"/>
+
+        <activity android:name="com.su.kotlin.activity.idioms.LazyPropertyActivity"
+                  android:label="@string/LazyPropertyActivity"/>
     </application>
 
 </manifest>
