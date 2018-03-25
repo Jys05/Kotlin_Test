@@ -83,6 +83,9 @@
 
         <activity android:name="com.su.kotlin.activity.idioms.LazyPropertyActivity"
                   android:label="@string/LazyPropertyActivity"/>
+
+        <activity android:name="com.su.kotlin.activity.idioms.OnlyReadMapActivity"
+                  android:label="@string/OnlyReadMapActivity"/>
     </application>
 
 </manifest>

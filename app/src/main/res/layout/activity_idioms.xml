@@ -51,4 +51,9 @@
         android:id="@+id/btnLazyProperty"
         style="@style/btn_lwm_lhw"
         android:text="@string/lazy_property"/>
+
+    <Button
+        android:id="@+id/btnOnlyReadMap"
+        style="@style/btn_lwm_lhw"
+        android:text="@string/only_read_map"/>
 </LinearLayout>

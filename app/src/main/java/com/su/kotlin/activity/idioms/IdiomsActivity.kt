@@ -20,15 +20,15 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
     override fun layoutResId(): Int = R.layout.activity_idioms
 
     override fun getIntentExtras(extrasBundle: Bundle) {
-        
+
     }
 
     override fun initData() {
-        
+
     }
 
     override fun initView() {
-        
+
     }
 
     override fun iniitListener() {
@@ -40,10 +40,11 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
         btnMapOrPair.setOnClickListener(this)
         btnRang.setOnClickListener(this)
         btnLazyProperty.setOnClickListener(this)
+        btnOnlyReadMap.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-        var intent = Intent()
+        val intent = Intent()
 
         when(v!!.id){
             btnCreatingDTOs.id  -> intent.setClass(this , CreatingDtosActivity::class.java)
@@ -61,6 +62,8 @@ class IdiomsActivity : BaseActivity(), View.OnClickListener {
             btnRang.id  -> intent.setClass(this , RangActivity::class.java)
 
             btnLazyProperty.id  -> intent.setClass(this , LazyPropertyActivity::class.java)
+
+            btnOnlyReadMap.id  -> intent.setClass(this , OnlyReadMapActivity::class.java)
         }
 
         startActivity(intent)

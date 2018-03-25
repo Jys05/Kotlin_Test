@@ -97,6 +97,8 @@
     <string name="traversing_map_or_pairs">遍历 \'map\' 或 \'pair型list\'</string>
     <string name="lazy_property">lazy属性</string>
     <string name="LazyPropertyActivity">Lazt属性——界面</string>
+    <string name="only_read_map">只读Map，以及访问Map</string>
+    <string name="OnlyReadMapActivity">只读Map,以及访问Map——界面</string>
 
 
 </resources>
